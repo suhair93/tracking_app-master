@@ -1,0 +1,89 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\locall\\Desktop\\tracking_app-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\locall\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-9.8.0.aar\\28d4cef45bc495f6e72ef35b1c20af3a\\res\\values-land\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7",
+                        "startColumns": "0,0,0,0",
+                        "startOffsets": "183,271,358,453",
+                        "endColumns": "87,86,94,90",
+                        "endOffsets": "270,357,452,543"
+                    },
+                    "to": {
+                        "startLines": "9,10,11,12",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "538,630,721,820",
+                        "endColumns": "91,90,98,94",
+                        "endOffsets": "625,716,815,910"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\locall\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-24.0.0.aar\\0c99ddcb08ee594011bdef2ea326784b\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,130,208",
+                        "endColumns": "74,77,74",
+                        "endOffsets": "125,203,278"
+                    },
+                    "to": {
+                        "startLines": "13,14,15",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "915,990,1068",
+                        "endColumns": "74,77,74",
+                        "endOffsets": "985,1063,1138"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\locall\\.gradle\\caches\\transforms-1\\files-1.1\\card-form-3.3.0.aar\\d587ca5430b6f4b10aac449404420cf0\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,119,192",
+                        "endColumns": "63,72,72",
+                        "endOffsets": "114,187,260"
+                    },
+                    "to": {
+                        "startLines": "6,7,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "328,392,465",
+                        "endColumns": "63,72,72",
+                        "endOffsets": "387,460,533"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\locall\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6769733706f7b5b5a00265c028fbbd8d\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,125,189,260",
+                        "endColumns": "69,63,70,67",
+                        "endOffsets": "120,184,255,323"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\locall\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\44ba66340022f2089237d6c77353a4b7\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "232"
+                    },
+                    "to": {
+                        "startLines": "16",
+                        "startColumns": "4",
+                        "startOffsets": "1143",
+                        "endLines": "19",
+                        "endColumns": "12",
+                        "endOffsets": "1320"
+                    }
+                }
+            ]
+        }
+    ]
+}

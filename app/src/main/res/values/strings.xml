@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Car Tracking</string>
+    <string name="company_name">Company Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="city">City</string>
+    <string name="arrival">Arrival</string>
+    <string name="departure">Departure</string>
+    <string name="district">District</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="create_a_company_account">Create company account</string>
+    <string name="home">Home</string>
+    <string name="tasks">Tasks</string>
+    <string name="Arrival_and_departure">Arrival and departure</string>
+    <string name="Registry">Registry</string>
+<string name="employees">Employees</string>
+    <string name="sign_in">Signing in. please wait ....</string>
+    <string name="created">Account is being created. please wait ....</string>
+    <string name="check_the_car_barcode">Check the car Barcode</string>
+    <string name="select_time">Select time</string>
+    <string name="no_any_tasks">No Any Tasks</string>
+    <string name="no_any_emp">No Any Employees</string>
+    <string name="task">Task</string>
+    <string name="start_date">Start Date</string>
+    <string name="select_car_number">Select Car Number</string>
+    <string name="save">Save</string>
+    <string name="end_date">End Date</string>
+    <string name="add_task">Add Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="add_employee">Add Employee</string>
+    <string name="edit_employee" >Edit Employee</string>
+    <string name="name">Name</string>
+    <string name="employee_number">Employee email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="car_number">Car Number</string>
+    <string name="car_type">Car Type</string>
+    <string name="send_notification">Send Notification</string>
+    <string name="show_notification">Show Notifications</string>
+    <string name="send">Send</string>
+    <string name="notification">Notification</string>
+    <string name="send_notification_to">Send Notification To:</string>
+    <string name="no_any_notifiction">No any notifiction</string>
+    <string name="edit">Edit</string>
+    <string name="employee">Employee</string>
+    <string name="barcode">BarCode</string>
+    <string name="close">Close</string>
+
+    <string name="scan_barcode_button">Scan barcode</string>
+    <string name="no_barcode_captured">No barcode captured</string>
+    <string name="barcode_error_format">"Error reading barcode: %1$s"</string>
+
+    <!-- Strings related to barcode scanner -->
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="admin">Admin</string>
+
+    <string-array name="arrival_departure">
+        <item>Select Status ...</item>
+        <item>Arrival</item>
+        <item>Departure</item>
+    </string-array>
+</resources>

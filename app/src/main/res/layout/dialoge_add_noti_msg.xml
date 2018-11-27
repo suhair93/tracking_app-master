@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent2"
+        android:padding="@dimen/_10sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_notification"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"
+
+            />
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:id="@+id/cancel_action"
+            android:visibility="gone"
+            android:background="@drawable/cancel"
+            android:padding="@dimen/_5sdp"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_notification_to"
+        android:textSize="@dimen/_12sdp"
+        android:textAlignment="textStart"
+        android:textColor="#000"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        />
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/_5sdp"
+      android:textAlignment="textStart"
+      android:layout_marginStart="@dimen/_10sdp"
+      android:textSize="@dimen/_12sdp"
+      android:id="@+id/name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/notification"
+        android:textSize="@dimen/_14sdp"
+        android:textAlignment="textStart"
+        android:textColor="#000"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        />
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:gravity="top"
+        android:lines="5"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:inputType="textMultiLine"
+        android:background="#f7f6f6"
+        android:id="@+id/msg"/>
+
+
+    <Button
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_14sdp"
+        android:layout_gravity="center"
+        android:text="@string/send"
+
+        android:id="@+id/send"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_btn"/>
+
+
+</LinearLayout>
+</ScrollView>

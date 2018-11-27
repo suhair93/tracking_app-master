@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "880239948030",
+    "firebase_url": "https://tracking-5a866.firebaseio.com",
+    "project_id": "tracking-5a866",
+    "storage_bucket": "tracking-5a866.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880239948030:android:211b79758f465cda",
+        "android_client_info": {
+          "package_name": "com.tracking.cartracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880239948030-oltroq0vi5i4jm9u26hj8qe1nmob054s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvGx1gY1eiEG6_e153U7Vzk-mR8aXaqLw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

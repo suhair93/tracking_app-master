@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/bg_sp"
+
+    tools:context="com.tracking.cartracking.LoginActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+
+    >
+
+    <ImageView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:id="@+id/logo"
+        android:background="@drawable/pin_g"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+
+        android:layout_marginTop="@dimen/_40sdp"
+        android:id="@+id/username"
+        android:hint="@string/email"
+        android:background="@drawable/rounded_edittext"
+        android:layout_below="@+id/logo"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:background="@drawable/rounded_edittext"
+        android:layout_below="@+id/username"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="@string/login"
+        android:id="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/password"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_btn"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/create_a_company_account"
+        android:id="@+id/new_account"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/rounded_accent"/>
+
+</RelativeLayout>
+</ScrollView>
