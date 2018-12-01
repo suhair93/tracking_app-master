@@ -30,6 +30,7 @@ import com.tracking.cartracking.Model.TaskModel;
 import com.tracking.cartracking.Model.employee;
 import com.tracking.cartracking.R;
 
+import java.util.Collections;
 import java.util.List;
 
 
@@ -99,6 +100,74 @@ public class EmpAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
             }
         });
+
+        Holder.delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder2 = new AlertDialog.Builder(context);
+                builder2.setMessage(" are you sure ?");
+                builder2.setCancelable(true)
+                        .setPositiveButton("YES", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                final FirebaseDatabase database = FirebaseDatabase.getInstance();
+                                final DatabaseReference ref = database.getReference();
+                                Query query = ref.child("employee").orderByChild("email").equalTo(model.getEmail());
+
+                                query.addListenerForSingleValueEvent(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(DataSnapshot dataSnapshot) {
+                                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                                            snapshot.getRef().removeValue();
+                                            notifyItemRemoved(position);
+
+                                        }
+                                    }
+
+                                    @Override
+                                    public void onCancelled(DatabaseError databaseError) {
+
+                                    }
+                                });
+                                ref.child("employee").addValueEventListener(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(DataSnapshot dataSnapshot) {
+                                        list.clear();
+
+                                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                                            employee employee = snapshot.getValue(employee.class);
+                                            if (employee.getAdmin().equals(model.getAdmin())) {
+                                                list.add(employee);
+                                                notifyDataSetChanged();
+                                            }
+                                        }
+
+                                        Collections.reverse(list);
+
+
+                                    }
+
+                                    @Override
+                                    public void onCancelled(DatabaseError databaseError) {
+
+                                    }
+                                });
+
+
+                            }
+                        })
+                  .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+
+                AlertDialog alertdialog2 = builder2.create();
+                alertdialog2.show();
+            }});
+
+
+
+
 
         Holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -183,7 +252,6 @@ public class EmpAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             }
         });
 
-
     }
 
     @Override
@@ -198,13 +266,16 @@ public class EmpAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
     public class Holder extends RecyclerView.ViewHolder {
         TextView Name;
-        ImageView barcode;
+        ImageView barcode,delete;
         public Holder(View itemView) {
             super(itemView);
             Name = (TextView) itemView.findViewById(R.id.Name);
             barcode = (ImageView) itemView.findViewById(R.id.barcode);
+            delete = (ImageView) itemView.findViewById(R.id.delete);
 
         }
+
+
 
     }
 }

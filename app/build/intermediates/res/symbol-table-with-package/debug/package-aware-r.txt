@@ -2208,6 +2208,7 @@ id dark
 id date_time
 id decor_content_parent
 id default_activity_button
+id delete
 id demote_common_words
 id demote_rfc822_hostnames
 id dep_time
